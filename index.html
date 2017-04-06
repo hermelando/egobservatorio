@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Observatorio de Gobierno Electronico</title>
+<style type="text/css">
+
+
+.contenedor {
+width: 100%;
+height: 100%;
+}
+
+
+
+header {
+
+	width:100%;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {
+	color:#fff;
+	font-size:30px;
+  font-weight:bold;
+  text-shadow: 2px 2px #000000;
+}
+
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+
+header nav {
+	width:50%;
+	/* Flexbox */
+
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+header nav a {
+	background:#172D51;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+
+	/* Flexbox */
+	flex-grow:1;
+}
+
+
+
+
+.main {
+	background:#597F80;
+	padding:20px;
+
+	flex:1 1 70%;
+	/*flex:1;*/
+}
+
+
+
+
+.main article:nth-last-child(1){
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom:none;
+}
+
+aside {
+	background:blue;
+	padding:20px;
+	/*FLEX*/
+	flex:1 1 30%;
+	/*flex:0 0 300px;*/
+
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+
+
+
+
+footer {
+	background:#2c3e50;
+	width: 100%;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+footer .links {
+	background:#c0392b;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+footer .links a {
+	flex-grow:1;
+
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+}
+
+footer .links a:hover {
+	background:black;
+}
+
+footer .social {
+	background:#e67e22;
+}
+
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+		
+	}
+
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+
+	header .logo {
+		margin:20px 0;
+	}
+
+	header nav {
+		width: 100%;
+	}
+
+	aside {
+		flex-direction:row;
+		flex:0;
+	}
+
+	aside .widget {
+		flex-grow:1;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	aside {
+		flex-direction:column;
+	}
+
+	footer {
+		justify-content:space-around;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ 
+
+ 
+
+ 
+header {
+	background:#073F41;
+	width:100%;
+	padding:20px;
+ 
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+ 
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+ 
+header .logo {
+	color:#fff;
+	font-size:30px;
+}
+ 
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+ 
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+ 
+header nav {
+	width:50%;
+	/* Flexbox */
+ 
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+ 
+header nav a {
+	background:#15BDC3;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:	13px;
+	font-size:15px;
+ 
+	/* Flexbox */
+	flex-grow:1;
+}
+ 
+header nav a:hover {
+	background:black;
+	font-size:16px;
+	font-weight:bold;
+}
+ 
+.main {
+	background:#597F80;
+	padding:20px;
+ 
+	flex:1 1 70%;
+	/*flex:1;*/
+}
+ 
+.main article {
+	margin-bottom: 20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #000;
+}
+ 
+.main article:nth-last-child(1){
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom:none;
+}
+ 
+aside {
+	background:#D2BFBF;
+	padding:20px;
+	/*FLEX*/
+	flex:1 1 30%;
+	/*flex:0 0 300px;*/
+ 
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+ 
+aside .widget {
+	background: white;
+	height:150px;
+	margin:10px;
+}
+ 
+footer {
+	background:#073F41;
+	width: 100%;
+	padding:20px;
+ 
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+ 
+footer .links {
+	background:#15BDC3;
+	display:flex;
+	flex-wrap:wrap;
+}
+ 
+footer .links a {
+	flex-grow:1;
+ 
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+}
+ 
+footer .links a:hover {
+	background:#E74C3C;
+}
+ 
+footer .social {
+	background:#15BDC3;
+}
+ 
+footer .social a {
+	color:#fff;
+	text-decoration: none;
+	padding:10px;
+	display: inline-block;
+}
+ 
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction:column;
+	}
+ 
+	header {
+		flex-direction:column;
+		padding:0;
+	}
+ 
+	header .logo {
+		margin:20px 0;
+	}
+ 
+	header nav {
+		width: 100%;
+	}
+ 
+	aside {
+		flex-direction:row;
+		flex:0;
+	}
+ 
+	aside .widget {
+		flex-grow:1;
+	}
+}
+ 
+@media screen and (max-width: 600px) {
+	aside {
+		flex-direction:column;
+	}
+ 
+	footer {
+		justify-content:space-around;
+	}
+}
+
+
+    /*<![CDATA[*/
+<!--
+div.ic_myCarousel {
+    margin: 20px auto 0 auto;
+    clear:right;
+}
+.infiniteCarousel {
+    box-shadow: 0px 3px 3px #333;
+    border: 3px solid #333;
+}
+.ic_left_nav, .ic_right_nav {
+    display: none;
+}
+-->
+    /*]]>*/
+
+</style>
+</head>
+
+<body>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
+  <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
+  <script>
+     var a = jQuery.noConflict();
+        a(document).ready(function() {
+        a('#carousel').infiniteCarousel({
+           transitionSpeed:1000,     /*Tiempo de avance de las imagenes*/
+           displayTime: 2000,   /* El tiempo en milisegundos para hacer pausa*/
+           thumbnailType: 'false',
+           customClass: 'myCarousel',
+           easeLeft: 'linear',
+           easeRight:'linear',
+           inView: 1,    /*Imagenes mostradas*/
+           advance: true,
+           autoPilot: true,
+           displayProgressRing: true,    /*muestra grafica del tiempo que pausa la imagen*/
+});
+ });
+</script>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+		
+				<a href="#">Observatorio de Gobierno Electronico</a>
+			</div>
+
+			<nav>
+				<a href="#">Inicio</a>
+                <a href="#">Bases de Datos</a>
+                <a href="#">Apps y Tecnologia</a>
+				<a href="#">Bibloteca</a>
+				<a href="#">Marco legal</a>
+                <a href="#">Marco Teorico</a>
+				
+			</nav>
+		</header>
+
+		
+        <section class="main">
+		
+        <aside>
+		
+        		
+	
+
+			<ul id="carousel">
+  <li><img width="600" height="338" alt="" src="gob1.jpg" /></li>
+  <li><img width="600" height="338" alt="" src="gob2.jpg" /></li>
+  <li><img width="600" height="338" alt="" src="gob3.jpg" /></li>
+  <li><img width="600" height="338" alt="" src="gob4.jpg" /></li>
+    <li><img width="600" height="338" alt="" src="gob5.png" /></li>
+</ul>
+<div class="art1">
+                <h2 class="titulo">Mision</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                
+                <br />
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+		
+		</aside>
+        
+        </section>
+
+
+
+
+		
+		<footer>
+		
+	<p>Obersvatorio de Gobierno Electronico Alpha</p>
+			<div class="social">
+            
+				<a href="#">@oservatorioEgo</a>
+				
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
